@@ -13,7 +13,11 @@
     <mvc:annotation-driven/>
     
     <!-- 静态资源 -->
-    <mvc:resources location="/img/" mapping="/img/**"/>
+    <mvc:resources location="/images/" mapping="/images/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/fonts/" mapping="/fonts/**"/>
+    <mvc:resources location="/mix/" mapping="/mix/**"/>
     <!-- 拦截器 -->
     <!-- <mvc:interceptors></mvc:interceptors> -->
     <!-- 扫描spring组件支持注解-->

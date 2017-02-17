@@ -17,13 +17,20 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping(value="/userList")
-	public ModelAndView userList(){
-		List<User> userList = userService.findAll();
+	@RequestMapping(value="/login")
+	public ModelAndView login(){
+		//List<User> userList = userService.findAll();
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("userList", userList);
-		mv.setViewName("userList");
+		//mv.addObject("userList", userList);
+		mv.setViewName("login");
 		
+		return mv;
+	}
+	
+	@RequestMapping(value="/player")
+	public ModelAndView player(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("player");
 		return mv;
 	}
 }
