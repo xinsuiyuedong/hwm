@@ -1,0 +1,88 @@
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements �ṹԪ�� */
+dl, dt, dd, ul, ol, li, /* list elements �б�Ԫ�� */
+pre, /* text formatting elements �ı���ʽԪ�� */
+form, fieldset, legend, button, input, textarea, /* form elements ��Ԫ�� */
+th, td, /* table elements ���Ԫ�� */
+img/* img elements ͼƬԪ�� */{
+    border:medium none;
+    margin: 0;
+    padding: 0;
+}
+/** ����Ĭ������ **/
+body,button, input, select, textarea {
+    font: 12px/1.5 "Microsoft YaHei";
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em{font-style:normal;}
+/** �����б�Ԫ�� **/
+ul, ol { list-style: none; }
+/** ���ó�����Ԫ�� **/
+a { text-decoration: none; color:#333;}
+a:hover { text-decoration: underline; color:#F40; }
+/** ����ͼƬԪ�� **/
+img{ border:0px;}
+/** ���ñ��Ԫ�� **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+body{
+    background:rgb(249,246,243);
+}
+header{
+    background: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    width: 1200px;
+}
+.container .wrap .logo{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.container .wrap nav{
+    float: left;
+    margin-left: 130px;
+}
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    padding: 30px;
+    font-size: 15px;
+    display: block;
+}
+nav ul li a:hover{
+    background:rgb(238,238,238)
+}
+.wrap form{
+    float: left;
+    margin-top:15px;
+}
+form div input{
+    float: left;
+}
+.wrap .btn-group{
+    float: left;
+    margin-left:100px;
+    margin-top: 10px;
+}
+
+
+/*�ֲ�*/
+#owl-demo {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#owl-demo .item {
+    display: block;
+}
+#owl-demo img {
+    display: block;
+    width: 100%;
+}

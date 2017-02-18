@@ -26,11 +26,4 @@ public class UserController {
 		
 		return mv;
 	}
-	
-	@RequestMapping(value="/player")
-	public ModelAndView player(){
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("player");
-		return mv;
-	}
 }

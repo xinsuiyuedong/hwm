@@ -36,7 +36,7 @@
                     <li ><a href="#">推荐</a></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">歌曲<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="${ctx}/user/player">最新歌曲</a></li>
+                            <li><a href="${ctx}/html/player.html">最新歌曲</a></li>
                             <li><a href="#">最热歌曲</a></li>
                             <li><a href="#">下载最多</a></li>
                             <li><a href="#">歌曲类别</a></li>
