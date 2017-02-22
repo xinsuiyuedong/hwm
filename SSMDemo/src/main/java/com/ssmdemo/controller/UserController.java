@@ -18,6 +18,7 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
+	private String inner = "сн©м";
 	
 	@RequestMapping(value="/tosignup")
 	public ModelAndView toSignup(){
@@ -65,9 +66,61 @@ public class UserController {
 				return mv;
 			}
 			else{
-				mv.setViewName("songlists");
+				inner = user.getId();
+				mv.setViewName("reindex");
 				return mv;
 			}
 		}
 	}
+	
+	@RequestMapping(value="/list")
+	public ModelAndView list(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("musiclist");
+		return mv;
+	}
+	
+	
+	
+	@RequestMapping(value="/detailedlist")
+	public ModelAndView detailedList(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("playerlist");
+		return mv;
+	}
+	
+	@RequestMapping(value="/personalfile")
+	public ModelAndView personalFile(){
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("user", inner);
+		mv.setViewName("personalfile");
+		return mv;
+	}
+	
+	@RequestMapping(value="/returntoreindex")
+	public ModelAndView toReindex(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("reindex");
+		return mv;
+	}
+	
+	@RequestMapping(value="/exit")
+	public String exit(){
+		return "redirect:/index.jsp";
+	}
+	
+	@RequestMapping(value="/relist")
+	public ModelAndView reList(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("remusiclist");
+		return mv;
+	}
+	
+	@RequestMapping(value="/redetailedlist")
+	public ModelAndView reDetailedList(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("replayerlist");
+		return mv;
+	}
+	
 }

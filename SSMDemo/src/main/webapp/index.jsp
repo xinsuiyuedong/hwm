@@ -37,28 +37,23 @@
             </div>
             <nav class="nav-menu">
                 <ul>
-                    <li ><a href="#">推荐</a> </li>
+                    <li ><a href="#recommend">推荐</a> </li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">歌曲<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="${ctx}/html/player.html">最新歌曲</a></li>
-                            <li><a href="#">最热歌曲</a></li>
-                            <li><a href="#">下载最多</a></li>
-                            <li><a href="#">歌曲类别</a></li>
+                            <li><!-- <a href="${ctx}/html/player.html"> --><a href="#recent">最新歌曲</a></li>
+                            <li><a href="#popular">最热歌曲</a></li>
+                            <!-- <li><a href="#">下载最多</a></li> -->
+                            <li><a href="#category">歌曲类别</a></li>
+                            <li><a href="#language">歌曲语种</a></li>
                         </ul>
                     </li>
-                    </li><li><a href="songlists.html">歌单</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">歌手<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">日韩歌手</a></li>
-                            <li><a href="#">欧美歌手</a></li>
-                            <li><a href="#">流行歌手</a></li>
-                        </ul>
-                    </li>
+                    </li><li><a href="${ctx}/user/list">歌单</a></li>
+                    </li><li><a href="#singer">歌手</a></li>
                 </ul>
             </nav>
-            <form class="navbar-form navbar-left" role="search">
+            <form action="${ctx}/song/search" class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="发现音乐">
+                    <input name="song" value="${song.song}" type="text" class="form-control" placeholder="发现音乐">
                 </div>
                 <button type="submit" class="btn btn-default">搜索</button>
             </form>
@@ -91,10 +86,10 @@
 
 <!--轮播-->
 <div id="owl-demo" class="owl-carousel owl-carousel-main">
-    <a class="item"><img src="images/slider1.jpg" alt=""></a>
-    <a class="item"><img src="images/slider2.jpg" alt=""></a>
-    <a class="item"><img src="images/slider1.jpg" alt=""></a>
-    <a class="item"><img src="images/slider2.jpg" alt=""></a>
+    <a class="item" href="${ctx}/html/player.html"><img src="images/slider1.jpg" alt=""></a>
+    <a class="item" href="${ctx}/html/player.html"><img src="images/slider2.jpg" alt=""></a>
+    <a class="item" href="${ctx}/html/player.html"><img src="images/slider1.jpg" alt=""></a>
+    <a class="item" href="${ctx}/html/player.html"><img src="images/slider2.jpg" alt=""></a>
 </div>
 
 
@@ -105,11 +100,11 @@
             <div class="left-top-menu">
                 <div class="lt-menu-name">
                     <ul class="tab-name">
-                        <li class="selected-yellow"><a href="javascript:void(0)">推荐</a></li>
-                        <li><a href="javascript:void(0)">最新</a></li>
-                        <li><a href="javascript:void(0)">最热</a></li>
+                        <li id="recommend" class="selected-yellow"><a href="javascript:void(0)">推荐</a></li>
+                        <li id="#"><a href="javascript:void(0)">最新</a></li>
+                        <li id="#"><a href="javascript:void(0)">最热</a></li>
                     </ul>
-                    <a href="#" class="more">
+                    <a href="${ctx}/user/list" class="more">
                         更多
                     </a>
                 </div>
@@ -124,7 +119,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -138,7 +133,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -152,7 +147,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -166,7 +161,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -180,7 +175,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -194,7 +189,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -208,7 +203,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -222,7 +217,7 @@
                             </div>
                             <div class="top">
                                 <ul>
-                                    <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                    <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                     <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                     <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                 </ul>
@@ -240,7 +235,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -254,7 +249,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -268,7 +263,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -282,7 +277,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -296,7 +291,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -310,7 +305,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -324,7 +319,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -338,7 +333,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -356,7 +351,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -370,7 +365,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -384,7 +379,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -398,7 +393,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -412,7 +407,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -426,7 +421,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -440,7 +435,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -454,7 +449,7 @@
                                 </div>
                                 <div class="top">
                                     <ul>
-                                        <li class="play"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span> </li>
+                                        <li class="play"><a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"  style="font-size: 40px;"></span></a> </li>
                                         <li class="download"><span class="glyphicon glyphicon-download" style="font-size:16px;"></span> </li>
                                         <li class="comment"><span class="glyphicon glyphicon-comment" style="font-size:16px;"></span> </li>
                                     </ul>
@@ -465,17 +460,17 @@
                 </div>
             </div>
             <div class="post-image-left">
-                <img src="images/slider2.jpg" style="width: 760px;height: 100px; margin-bottom: 30px">
+                <a href="${ctx}/html/player.html"><img src="images/slider2.jpg" style="width: 760px;height: 100px; margin-bottom: 30px"></a>
             </div>
             <div class="left-bottom-menu">
                 <div class="llb-menu">
                    <div class="llb-menu-name">
                        <ul class="style-tab-name">
-                           <li class="selected-green"><a href="javascript:void(0)">华语</a> </li>
+                           <li id="language" class="selected-green"><a href="javascript:void(0)">华语</a> </li>
                            <li><a href="javascript:void(0)">日韩</a> </li>
                            <li><a href="javascript:void(0)">欧美</a> </li>
                        </ul>
-                       <a href="#" class="more">
+                       <a href="${ctx}/user/list" class="more">
                            更多
                        </a>
                    </div>
@@ -484,135 +479,74 @@
                             <ul>
                                 <li class="line hight-light">
                                     <span>1.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                        <ul>
-                                            <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                            <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                            <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                            <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                        </ul>
+                                        
                                 </li>
                                 <li class="line">
                                     <span>2.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
                                 </li>
                                 <li class="line hight-light">
                                     <span>3.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>4.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>5.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>6.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>7.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>8.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>9.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>10.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>11.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>12.</span>
-                                    <b>蒲公英的约定</b>
+                                    <a href="${ctx}/html/player.html"><b>蒲公英的约定</b></a>
                                     <span>by 周杰伦</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                             </ul>
                         </section>
@@ -620,135 +554,74 @@
                             <ul>
                                 <li class="line hight-light">
                                     <span>1.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>2.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>3.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>4.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>5.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>6.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>7.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>8.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>9.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>10.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>11.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
                                 </li>
                                 <li class="line">
                                     <span>12.</span>
-                                    <b>what's up</b>
+                                    <a href="${ctx}/html/player.html"><b>what's up</b></a>
                                     <span>by 赤西仁</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    
                                 </li>
                             </ul>
                         </section>
@@ -756,135 +629,75 @@
                             <ul>
                                 <li class="line hight-light">
                                     <span>1.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>2.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>3.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>4.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>5.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>6.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>7.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>8.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>9.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>10.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line hight-light">
                                     <span>11.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                                 <li class="line">
                                     <span>12.</span>
-                                    <b>模特</b>
-                                    <span>by 李荣浩</span>
-                                    <ul>
-                                        <li><a href="#" class="line_play glyphicon glyphicon-triangle-right"></a> </li>
-                                        <li><a href="#" class="line_download glyphicon glyphicon-download"></a> </li>
-                                        <li><a href="#" class="line_comment glyphicon glyphicon-comment"></a> </li>
-                                        <li><a href="#" class="line_plus glyphicon glyphicon-plus"></a> </li>
-                                    </ul>
+                                    <a href="${ctx}/html/player.html"><b>Sorry</b></a>
+                                    <span>by Justin Bieber</span>
+                                    
                                 </li>
                             </ul>
                         </section>
@@ -893,9 +706,9 @@
                 <div class="lrb-menu">
                     <div class="lrb-menu-name">
                         <ul>
-                         <li><a>NEW SONGS</a></li>
+                         <li id="recent"><a>最新歌曲</a></li>
                         </ul>
-                        <a href="#" class="more">
+                        <a href="${ctx}/user/list" class="more">
                             更多
                         </a>
                     </div>
@@ -905,84 +718,84 @@
                             <img src="images/m15.jpg" >
                             <div>
                                 <b>无心</b>
-                                <span class="glyphicon glyphicon-triangle-right"></span>
+                                <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                             </div>
                         </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                             <li>
                                 <img src="images/m15.jpg" >
                                 <div>
                                     <b>无心</b>
-                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                    <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-triangle-right"></span></a>
                                 </div>
                             </li>
                         </ul>
@@ -994,9 +807,9 @@
             <div class="right-bottom-menu">
                 <div class="right-bottom-name">
                     <ul>
-                        <li><a>TOP SONGS</a></li>
+                        <li id="popular"><a>最热歌曲</a></li>
                     </ul>
-                    <a href="#" class="more">
+                    <a href="${ctx}/user/list" class="more">
                         更多
                     </a>
                 </div>
@@ -1004,61 +817,61 @@
                     <ul>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge red">1</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge red">2</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge red">3</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">4</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">5</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">6</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">7</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">8</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">9</span>
                         </li>
                         <li>
                             <img src="images/m0.jpg">
-                            <b>你不知道的事</b>
+                            <a href="${ctx}/html/player.html"><b>你不知道的事</b></a>
                             <span>王力宏</span>
                             <span class="badge">10</span>
                         </li>
@@ -1067,25 +880,25 @@
                 </div>
             </div>
             <div class="tag">
-                <div class="tag-name">热门标签</div>
+                <div id="category" class="tag-name">歌曲类别</div>
                 <ul>
-                    <li><a href="#">轻音乐</a> </li>
-                    <li><a href="#">日韩流行</a> </li>
-                    <li><a href="#">排行榜</a> </li>
-                    <li><a href="#">新歌速递</a> </li>
-                    <li><a href="#">伤感</a> </li>
-                    <li><a href="#">下午茶</a> </li>
-                    <li><a href="#">说唱</a> </li>
-                    <li><a href="#">爵士</a> </li>
-                    <li><a href="#">影视原声</a> </li>
-                    <li><a href="#">校园风</a> </li>
+                    <li><a href="${ctx}/user/list">轻音乐</a> </li>
+                    <li><a href="${ctx}/user/list">日韩流行</a> </li>
+                    <li><a href="${ctx}/user/list">排行榜</a> </li>
+                    <li><a href="${ctx}/user/list">新歌速递</a> </li>
+                    <li><a href="${ctx}/user/list">伤感</a> </li>
+                    <li><a href="${ctx}/user/list">下午茶</a> </li>
+                    <li><a href="${ctx}/user/list">说唱</a> </li>
+                    <li><a href="${ctx}/user/list">爵士</a> </li>
+                    <li><a href="${ctx}/user/list">影视原声</a> </li>
+                    <li><a href="${ctx}/user/list">校园风</a> </li>
                 </ul>
             </div>
             <div class="right-top-menu">
                 <div class="rt-menu-name">
                     <ul>
-                        <li><a href="#">歌手</a> </li>
-                        <li><a href="#">更多</a> </li>
+                        <li id="singer"><a>歌手</a> </li>
+                        <li><a href="${ctx}/user/list">更多</a> </li>
                     </ul>
                 </div>
                 <div class="rt-menu-content">
@@ -1095,7 +908,7 @@
                             <div>&nbsp;&nbsp;周杰伦是一代流行天王，是我们童年的回忆，伴随我们整个青少年</div>
                         </div>
                         <span class="glyphicon glyphicon-user"></span>
-                        <b>周杰伦</b>
+                        <a href="${ctx}/html/player.html"><b>周杰伦</b></a>
                         <p>嘻哈音乐小王子，不简单的音乐人</p>
                     </div>
                     <div class="singer-wrap">
@@ -1104,7 +917,7 @@
                             <div>&nbsp;&nbsp;周杰伦是一代流行天王，是我们童年的回忆，伴随我们整个青少年</div>
                         </div>
                         <span class="glyphicon glyphicon-user"></span>
-                        <b>周杰伦</b>
+                        <a href="${ctx}/html/player.html"><b>周杰伦</b></a>
                         <p>嘻哈音乐小王子，不简单的音乐人</p>
                     </div>
                     <div class="singer-wrap">
@@ -1113,7 +926,7 @@
                             <div>&nbsp;&nbsp;周杰伦是一代流行天王，是我们童年的回忆，伴随我们整个青少年</div>
                         </div>
                         <span class="glyphicon glyphicon-user"></span>
-                        <b>周杰伦</b>
+                        <a href="${ctx}/html/player.html"><b>周杰伦</b></a>
                         <p>嘻哈音乐小王子，不简单的音乐人</p>
                     </div>
                     <div class="singer-wrap">
@@ -1122,7 +935,7 @@
                             <div>&nbsp;&nbsp;周杰伦是一代流行天王，是我们童年的回忆，伴随我们整个青少年</div>
                         </div>
                         <span class="glyphicon glyphicon-user"></span>
-                        <b>周杰伦</b>
+                        <a href="${ctx}/html/player.html"><b>周杰伦</b></a>
                         <p>嘻哈音乐小王子，不简单的音乐人</p>
                     </div>
                     <div class="singer-wrap">
@@ -1131,7 +944,7 @@
                             <div>&nbsp;&nbsp;周杰伦是一代流行天王，是我们童年的回忆，伴随我们整个青少年</div>
                         </div>
                         <span class="glyphicon glyphicon-user"></span>
-                        <b>周杰伦</b>
+                        <a href="${ctx}/html/player.html"><b>周杰伦</b></a>
                         <p>嘻哈音乐小王子，不简单的音乐人</p>
                     </div>
                 </div>
@@ -1155,17 +968,16 @@
             <h1>ABOUT US</h1>
             <ul>
                 <li><a href="#">关于我们</a></li>
-                <li><a href="#">推广合作</a></li>
-                <li><a href="#">客服中心</a></li>
-                <li><a href="#">友情链接</a></li>
+                <li><a href="http://www.baidu.com">友情链接</a></li>
+                <li><a href="#">管理员模式</a></li>
             </ul>
         </div>
         <div class="right">
             <h1>CONTACT US</h1>
             <ul>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> 联系电话：13866666666</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 电子邮箱：12345678@qq.com</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> 地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：华中科技大学东校区软件学院</a></li>
+                <li><span class="glyphicon glyphicon-earphone"></span> 联系电话：13866666666</li>
+                <li><span class="glyphicon glyphicon-envelope"></span> 电子邮箱：12345678@qq.com</li>
+                <li><span class="glyphicon glyphicon-map-marker"></span> 地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：华中科技大学东校区软件学院</li>
             </ul>
         </div>
     </div>
