@@ -1,0 +1,30 @@
+.box{position:absolute;width:400px;left:50%;height:auto;z-index:100;background-color:#fff;border:1px #ddd solid;padding:1px;border-radius: 5px;}
+.showbtn {font:bold 14px '微软雅黑';}
+#bg{background-color:#666;position:absolute;z-index:99;left:0;top:0;display:none;width:100%;height:100%;opacity:0.5;filter: alpha(opacity=50);-moz-opacity: 0.5;}
+
+.dialogTop{width:90%;margin:5px auto;border-bottom:1px dotted #ccc;letter-spacing:1px;padding:20px 0;text-align:right;}
+.dialogIco{width:50px;height:50px;position:absolute;top:-25px;left:50%;margin-left:-25px;}
+.close{
+    font-family:"微软雅黑";
+    font-size: 12px;
+}
+.editInfos{padding:15px 0;
+    width:400px;
+}
+.editInfos li{width:90%;margin:8px auto auto;text-align: center;}
+.ipt{border:1px solid #ccc;padding:5px;border-radius:3px;-webkit-border-radius:3px;box-shadow:0 0 3px #ccc inset;-webkit-box-shadow:0 0 3px #ccc inset;margin-left:5px;}
+.ipt:focus{outline:none;border-color:#66afe9;box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);}
+.submitBtn{width:90px;height:30px;line-height:30px;font-family:"微软雅黑","microsoft yahei";cursor:pointer;margin-top:15px;display:inline-block;border-radius:5px;-webkit-border-radius:5px;text-align:center;background-color:#428bca;color:#fff;
+    border:1px solid gray;}
+.register{
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    font-family: "微软雅黑", "microsoft yahei";
+    cursor: pointer;
+    margin-top: 15px;
+    display:inline-block;border-radius:5px;-webkit-border-radius:5px;text-align:center;background-color:white;color:#000000;
+    border:1px solid gray;
+    margin-right: 8px;
+}
+

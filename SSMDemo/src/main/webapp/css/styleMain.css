@@ -1,0 +1,645 @@
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */{
+    border:medium none;
+    margin: 0;
+    padding: 0;
+}
+/** 设置默认字体 **/
+body,button, input, select, textarea {
+    font: 12px/1.5 "Microsoft YaHei";
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em{font-style:normal;}
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#333;}
+a:hover { text-decoration: none; }
+/** 重置图片元素 **/
+img{ border:0px;}
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+body{
+    background:  #f6efe8;
+
+}
+header{
+    background: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    width: 1200px;
+}
+.container .wrap .logo{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.container .wrap nav{
+    float: left;
+    margin-left: 130px;
+}
+nav ul li{
+    float: left;
+}
+/*导航栏*/
+nav ul li a{
+    padding: 30px;
+    font-size: 15px;
+    display: block;
+}
+nav ul li a:hover{
+    background:rgb(238,238,238)
+}
+.wrap form{
+    float: left;
+    margin-top:15px;
+}
+form div input{
+    float: left;
+}
+.wrap .btn-group{
+    float: left;
+    margin-left:100px;
+    margin-top: 10px;
+}
+nav form
+
+
+    /*轮播*/
+#owl-demo {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    -webkit-box-shadow:0 0 10px
+-moz-box-shadow:0 0 10px #0CC;
+    box-shadow:0 0 10px #0CC;
+}
+#owl-demo .item {
+    display: block;
+}
+#owl-demo img {
+    display: block;
+    width: 100%;
+}
+
+
+/**/
+section .container{
+    width: 1200px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+.section-right{
+    width: 350px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.section-left{
+    width:760px;
+    float: left;
+}
+/*左上歌单*/
+.lt-menu-name{
+    width: 100%;
+    height: 70px;
+}
+.lt-menu-name ul li{
+    float: left;
+}
+.lt-menu-name ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+}
+.lt-menu-name ul li a:hover{
+    background:rgb(238,238,238);
+    border-bottom: 2px solid #ff3824 ;
+}
+.lt-menu-name a{
+    float: right;
+    font-size: 14px;
+    padding: 20px;
+}
+.lt-menu-name a:hover {
+    color:#ff3824;
+}
+.lt-menu-content{
+    clear: both;
+    height: 660px;
+    padding-bottom: 70px;
+
+}
+.lt-menu-content ul .img-wrap{
+    float: left;
+    width: 172px;
+    height: 315px;
+    margin-right:23px;
+    position: relative;
+    cursor: pointer;
+}
+.lt-menu-content ul .img-wrap:nth-of-type(4n){
+    margin-right:0px;
+}
+.lt-menu-content ul .img-wrap img{
+    width: 172px;
+    border-radius: 12px;
+}
+.lt-menu-content .img-wrap:hover .top{
+    display: block;
+}
+.lt-menu-content ul li b{
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.lt-menu-content ul li p{
+    color: #666666;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.img-wrap:hover.top{
+    display: block;
+}
+.lt-menu-content .img-wrap .top{
+    background: #000;
+    opacity: 0.5;
+    border-radius: 12px;
+    height: 258px;
+    position: absolute;
+    top: 0;
+    width: 172px;
+    z-index: 100;
+    display: none;
+    color: #ffffff;
+}
+.top span:hover{
+    color:#ff3824;
+}
+.top .play{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    cursor: pointer;
+}
+.top .download{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+.top .comment{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+/*右上歌手推荐*/
+.right-top-menu{
+    height:680px;
+    margin-bottom: 10px;
+    clear: both;
+}
+.rt-menu-name{
+    width: 100%;
+    height: 65px;
+    clear: both;
+    margin-top: 20px;
+}
+.rt-menu-name ul li:nth-of-type(1){
+    float: left;
+
+}
+.rt-menu-name ul li:nth-of-type(2){
+    float: right;
+}
+.rt-menu-name ul li a{
+    font-size: 14px;
+    padding: 20px;
+    display: block;
+
+}
+.rt-menu-name ul li:nth-of-type(1) a:hover{
+    background: rgb(238,238,238);
+    color:rgb(76, 182, 203);
+    border-bottom: 2px solid rgb(76, 182, 203);
+}
+.rt-menu-name ul li:nth-of-type(2) a:hover{
+    color:rgb(76, 182, 203);
+}
+.rt-menu-content {
+    height: 120px;
+    clear: both;
+
+}
+.rt-menu-content .singer-wrap{
+    background: #f4f4f4;
+    height: 115px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.rt-menu-content .singer-wrap .text-intro{
+    width: 210px;
+    position: relative;
+    float: left;
+}
+.rt-menu-content .singer-wrap .text-intro img{
+    height: 100px;border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.rt-menu-content .singer-wrap .text-intro div{
+    width: 184px;
+    height: 40px;
+    border-radius: 2px;
+    background: #000000;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    color: #ffffff;
+    display: none;
+}
+.rt-menu-content .singer-wrap:hover .text-intro div{
+    display: block;
+}
+.rt-menu-content b:hover {
+   text-decoration: underline;
+}
+.rt-menu-content .singer-wrap span{
+    margin:40px  15px  15px  10px;
+}
+.rt-menu-content .singer-wrap p{
+    margin-left:120px;
+    color: #666;
+}
+
+
+/*左左下排行榜*/
+.left-bottom-menu .llb-menu{
+    width: 390px;
+    float: left;
+    height: 500px;
+    border: 1px solid #999;
+    border-top: none;
+    padding: 0 20px 20px 20px;
+    clear: both;
+}
+.left-bottom-menu .lrb-menu{
+    width: 370px;
+    float: right;
+    height: 500px;
+    border: 1px solid #999;
+    border-bottom: none;
+    border-left: none;
+    padding:0px 20px 0 20px;
+}
+
+.left-bottom-menu{
+    margin-top:30px;
+    position: relative;
+}
+.llb-menu-name{
+    height:70px;
+}
+.llb-menu-name ul li{
+    float: left;
+}
+.llb-menu-name ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+}
+.llb-menu-name ul li a:hover{
+    background:rgb(224,234,246) ;
+    color:rgb(76, 182, 203);
+    border-bottom: 2px solid rgb(76, 182, 203);
+}
+.llb-menu-name a{
+    float: right;
+    font-size: 14px;
+    padding: 20px;
+}
+.llb-menu-name>a:hover {
+    color:rgb(76, 182, 203);
+}
+.llb-menu-content{
+    width: 354px;
+    clear: both;
+    border: 1px solid #f1eded;
+    position: relative;
+}
+.llb-menu-content ul .line{
+    background: #e8f0f2;
+    height: 35px;
+}
+.llb-menu-content ul .hight-light{
+    background: #f4f4f4;
+}
+.line{
+    position: relative;
+}
+.line span{
+    margin-left: 30px;
+}
+.line span:nth-of-type(2){
+    margin-left: 100px;
+}
+.line b{
+    line-height: 35px;
+    cursor: pointer;
+}
+.line b:hover{
+    color: rgb(84,92,166);
+}
+.line ul{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+.line ul li{
+    float: left;
+    padding-right: 15px;
+    display: none;
+}
+.line ul li a:hover{
+    color: rgb(72,182,203);
+}
+
+/*左下右新歌*/
+
+.lrb-menu-name{
+    height:58px;
+    clear: both;
+}
+.lrb-menu-name ul li{
+    float: left;
+    clear: both;
+    cursor: pointer;
+}
+.lrb-menu-name ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+}
+.lrb-menu-name ul li a:hover{
+    background:rgb(224,234,246) ;
+    color:rgb(76, 182, 203);
+    border-bottom: 2px solid rgb(76, 182, 203);
+}
+.lrb-menu-name a{
+    float: right;
+    font-size: 14px;
+    padding: 20px;
+}
+.lrb-menu-name>a:hover {
+    color:rgb(76, 182, 203);
+}
+.lrb-menu-content{
+    clear: both;
+    margin-top: 10px;
+    position: relative;
+}
+.lrb-menu-content ul li{
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.lrb-menu-content ul li:nth-of-type(3n){
+    margin-right: 0px;
+}
+.lrb-menu-content ul li img{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.lrb-menu-content ul li div{
+    width: 89px;
+    height: 20px;
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff;
+}
+.lrb-menu-content ul li:hover  div{
+    opacity: 0.7;
+}
+.lrb-menu-content ul li div b{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*热门标签*/
+.tag{
+    width: 350px;
+    height: 120px;
+
+}
+.tag .tag-name{
+    height: 35px;
+    clear: both;
+    line-height: 35px;
+    font-size: 14px;
+    background:rgb(55,187,67);
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.tag ul{
+    width: 350px;
+    height: 80px;
+   border: 1px solid#cccccc;
+    clear: both;
+
+    border-top: none;
+}
+.tag ul li {
+    float: left;
+    padding: 10px 20px 10px 10px;
+}
+.tag ul li:hover{
+    text-decoration: underline;
+}
+    /*右下top songs*/
+.right-bottom-menu{
+    height: 650px;
+
+}
+.right-bottom-name{
+    height:58px;
+    clear: both;
+}
+.right-bottom-name ul li{
+    float: left;
+    clear: both;
+    cursor: pointer;
+}
+.right-bottom-name ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+}
+.right-bottom-name ul li a:hover{
+    background: rgb(238,238,238);
+    color:#ff3824;
+    border-bottom: 2px solid #ff3824;
+}
+.right-bottom-name a{
+    float: right;
+    font-size: 14px;
+    padding: 20px;
+}
+.right-bottom-name>a:hover {
+    color:#ff3824;
+}
+.right-bottom-content{
+    clear: both;
+    border:1px solid #cccccc;
+    margin-top: 10px;
+}
+.right-bottom-content ul li:last-child{
+    border: none;
+}
+.right-bottom-content ul li{
+    height:55px;
+    width:350px;
+    border-bottom:1px solid #cccccc;
+    cursor: pointer;
+    position: relative;
+}
+.right-bottom-content ul li img{
+    width: 45px;
+    border-radius: 15px;
+    margin:5px 20px 5px 20px;
+}
+.right-bottom-content ul li p{
+    margin-left: 20px;
+    font-size: 10px;
+    color: #666;
+}
+.right-bottom-content ul li b{
+    line-height: 55px;
+}
+.right-bottom-content ul li:hover b{
+    text-decoration: underline;
+}
+.right-bottom-content ul li span:nth-of-type(1){
+    margin-left: 20px;
+    font-size: 8px;
+    color: #ada8a8;
+    margin-right: 80px;
+}
+
+.right-bottom-content li .red{
+    background: #f05050;
+}
+.right-bottom-content li:hover .red{
+    background: red;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 220px;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+}
+footer .container .left{
+    width: 460px;
+    font-size: 10px;
+    margin-left: 60px;
+    float: left;
+}
+footer .container .left h1{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+footer .container .left p{
+    line-height:25px;
+    color: #999;
+}
+footer .container .center{
+    width: 250px;
+    font-size: 10px;
+    float: left;
+}
+footer .container .center h1{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+footer .container .center ul li{
+    line-height: 25px;
+}
+footer .container .center ul li a{
+    color: #999;
+}
+footer .container .center ul li a:hover{
+    text-decoration: underline;
+}
+footer .container .right{
+    width: 250px;
+    font-size: 10px;
+    float: left;
+}
+footer .container .right h1{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+footer .container .right ul li{
+    line-height: 25px;
+}
+footer .container .right ul li a span{
+    margin-right: 10px;
+}
+footer .container .right ul li a{
+    color: #999;
+}
+footer .container .right ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*js中tab切换的css*/
+.hide-hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.selected-yellow{
+    background:rgb(238,238,238);
+    border-bottom: 2px solid #ff3824 ;
+}
+.selected-green{
+    color:rgb(76, 182, 203);
+    background:rgb(224,234,246) ;
+    border-bottom: 2px solid rgb(76, 182, 203);
+}
+

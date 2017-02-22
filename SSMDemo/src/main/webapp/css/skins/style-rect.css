@@ -1,0 +1,274 @@
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */{
+    border:medium none;
+    margin: 0;
+    padding: 0;
+}
+/** 设置默认字体 **/
+body,button, input, select, textarea {
+    font: 12px/1.5 "Microsoft YaHei";
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em{font-style:normal;}
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#333;}
+a:hover { text-decoration: none; }
+/** 重置图片元素 **/
+img{ border:0px;}
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+body{
+    background:rgb(238,238,238);
+    /* rgb(249,246,243);*/
+}
+header{
+    background: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    width: 1200px;
+}
+.container .wrap .logo{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.container .wrap nav{
+    float: left;
+    margin-left: 130px;
+}
+nav ul li{
+    float: left;
+}
+/*导航栏*/
+nav ul li a{
+    padding: 30px;
+    font-size: 15px;
+    display: block;
+}
+nav ul li a:hover{
+    background:rgb(238,238,238)
+}
+.wrap form{
+    float: left;
+    margin-top:15px;
+}
+form div input{
+    float: left;
+}
+.wrap .btn-group{
+    float: left;
+    margin-left:100px;
+    margin-top: 10px;
+}
+nav form
+
+
+    /*轮播*/
+#owl-demo {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    -webkit-box-shadow:0 0 10px
+-moz-box-shadow:0 0 10px #0CC;
+    box-shadow:0 0 10px #0CC;
+}
+#owl-demo .item {
+    display: block;
+}
+#owl-demo img {
+    display: block;
+    width: 100%;
+}
+
+
+/*歌单*/
+section{
+    margin-top: 10px;
+}
+.container{
+    background: #ffffff;
+}
+
+.left-top-menu{
+    width: 100%;
+    height:650px;
+}
+.left-top-menu .lt-menu-name{
+    width: 100%;
+    height: 65px;
+}
+.lt-menu-name ul li{
+    float: left;
+}
+.lt-menu-name ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+}
+.lt-menu-name ul li a:hover{
+    background:rgb(238,238,238);
+    border-bottom: 2px solid #ff3824 ;
+}
+.lt-menu-name a{
+    float: right;
+    font-size: 14px;
+    padding: 20px;
+}
+.lt-menu-name a:hover {
+    color:#ff3824;
+}
+.lt-menu-content{
+    clear: both;
+    position: relative;
+}
+
+.lt-menu-content .bottom img{
+    width:100%;
+    border-radius: 12px;
+}
+.lt-menu-content .col-md-3{
+    margin-top: 5px;
+}
+
+.col-md-3 .bottom b{
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.col-md-3 .bottom p{
+    color: #666666;
+    cursor: pointer;
+}
+.col-md-3 .top{
+    background: #000;
+    opacity: 0.4;
+    border-radius: 12px;
+    height: 243px;
+    position: absolute;
+    top: 0;
+    width: 163px;
+    display: none;
+}
+.lt-menu-content .col-md-3:hover .top{
+    display: block;
+}
+.top ul li:hover{
+    color: #ffffff;
+}
+.col-md-3 .top ul .play{
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    cursor: pointer;
+}
+.col-md-3 .top ul .download{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+.col-md-3 .top ul .comment{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*歌手推荐*/
+.rt-menu-name{
+    width: 100%;
+    height: 65px;
+}
+.rt-menu-name ul li:nth-of-type(1){
+    float: left;
+
+}
+.rt-menu-name ul li:nth-of-type(2){
+    float: right;
+}
+.rt-menu-name ul li a{
+    font-size: 14px;
+    padding: 20px;
+    display: block;
+
+}
+.rt-menu-name ul li:nth-of-type(1) a:hover{
+    background: rgb(238,238,238);
+    color:#ff3824;
+    border-bottom: 2px solid #ff3824;
+}
+.rt-menu-name ul li:nth-of-type(2) a:hover{
+    color:#ff3824;
+}
+.right-top-menu .rt-menu-content img{
+    margin-left: 10px;
+    margin-top:8px;
+    float: left;
+    width: 60%;clear: both;
+    cursor: pointer;
+}
+.rt-menu-content .singer-wrap{
+    position: relative;
+}
+.text-intro div{
+    width: 221px;
+    height: 50px;
+    background: #000000;
+    opacity: 0.8;
+    position: absolute;
+    color: #ffffff;
+    display: none;
+}
+.text-intro .text1{
+    bottom: -130px;
+    left: 10px;
+}
+.text-intro .text2{
+    bottom: -257px;
+    left: 10px;
+}
+.text-intro .text3{
+    bottom: -385px;
+    left: 10px;
+}
+.text-intro .text4{
+    bottom: -513px;
+    left: 10px;
+}
+.text-intro:hover div{
+    display: block;
+}
+
+.right-top-menu .rt-menu-content span{
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.right-top-menu .rt-menu-content b{
+    float: left;
+    margin-left: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.right-top-menu .rt-menu-content p {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+

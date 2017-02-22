@@ -19,6 +19,7 @@
     <mvc:resources location="/fonts/" mapping="/fonts/**"/>
     <mvc:resources location="/mix/" mapping="/mix/**"/>
     <mvc:resources location="/html/" mapping="/html/**"/>
+    <mvc:resources location="/php/" mapping="/php/**"/>
     <!-- 拦截器 -->
     <!-- <mvc:interceptors></mvc:interceptors> -->
     <!-- 扫描spring组件支持注解-->

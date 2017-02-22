@@ -45,7 +45,7 @@
         defaultOptions = {
             ratingCallback:null,
             currencySymbol:'$',
-            buyText:'BUY',
+            buyText:'Like',
             tracksToShow:5,
             autoPlay:false,
             jPlayer:{}

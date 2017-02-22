@@ -19,29 +19,23 @@ public class UserServiceImpl implements UserService{
 	private UserDao userDao;
 	
 	public void add(User user) {
-		// TODO Auto-generated method stub
 		userDao.add(user);
 	}
 
 	public void update(User user) {
-		// TODO Auto-generated method stub
 		userDao.update(user);
 	}
 
-	public void delete(Integer id) {
-		// TODO Auto-generated method stub
+	public void delete(String id) {
 		userDao.delete(id);
 	}
 
-	public User findByID(Integer id) {
-		// TODO Auto-generated method stub
+	public User findByID(String id) {
 		return userDao.findByID(id);
 	}
 
 	public List<User> findAll() {
-		// TODO Auto-generated method stub
 		return userDao.findAll();
 	}
 	
-
 }

@@ -1,0 +1,99 @@
+/*个人信息*/
+section .container .list-top{
+    height: 350px;
+    position: relative;
+    background: #ffffff;
+}
+.list-top.list-pic img{
+     height: 262px;
+    width: 100%;
+}
+
+.list-top .list-face{
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 100px;
+    z-index: 100;
+    position: absolute;
+    left: -100px;
+    top:100px;
+    margin-left: 50%;
+
+}
+.list-top .list-face img{
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.list-top .self-intro{
+    position: absolute;
+    right: 380px;
+    bottom:90px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.list-top .self-intro a{
+    display: block;
+    margin-top: 10px;
+    padding: 4px 0 4px 8px;
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.list-top .self-intro a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*歌单*/
+.list-menu{
+    height: 500px;
+    padding: 0px 100px 20px 100px;
+}
+.list-menu div{
+    height: 400px;
+}
+.list-menu .list-menu-name{
+    width: 100%;
+    border-bottom: 2px solid #ff3824;
+    height: 50px;
+}
+.list-menu .list-menu-name p{
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+}
+.list-menu .list-menu-name img{
+    width: 20px;
+}
+.list-menu-content ul li{
+    height: 40px;
+    border-bottom: 1px solid #CCCCCC;
+    line-height: 40px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+.list-menu-content ul li span:nth-of-type(1){
+     padding-left: 20px;
+     margin-right: 10px;
+ }
+.list-menu-content ul li span:nth-of-type(2){
+    padding-left: 120px;
+}
+.list-menu-content ul li span:nth-of-type(2):hover{
+    color: #ff8b8b;
+}
+.list-menu-content ul li:hover{
+    background: #eee;
+    text-decoration: underline;
+}
+

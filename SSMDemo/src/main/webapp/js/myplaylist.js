@@ -7,7 +7,7 @@ var myPlaylist = [
         artist:'Sample',
         rating:4,
         //buy:'#',
-       // price:'0.99',
+        //price:'0.99',
         duration:'00:30',
         cover:'../mix/1.gif'
     },

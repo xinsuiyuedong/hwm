@@ -2,29 +2,26 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.ssmdemo.dao.UserDao">
 	<insert id="add" parameterType="User">
-	   insert into user(username,password,email) values (#{username},#{password},#{email})
+	   insert into user(id, password) values (#{id}, #{password})
 	</insert>
 	
 	<update id="update" parameterType="User">
-	   update user set username = ${username}, password = ${password}, email = ${email} while id = #{id}
+	   update user set password = ${password} while id = #{id}
 	</update>
 	
-	<delete id="delete" parameterType="Integer">
+	<delete id="delete" parameterType="String">
 	   delete from user where id = #{id}
 	</delete>
 	
-	<select id="findByID" parameterType="Integer" resultType="User">
+	<select id="findByID" parameterType="String" resultType="User">
 	   select * from user where id = #{id}
 	</select>
-	
+	  
 	<resultMap type="User" id="userMap">
 	   <id column="id" property="id"/>
-	   <result column="username" property="username"/>
 	   <result column="password" property="password"/>
-	   <result column="email" property="email"/>
 	   <!--  <association property="classes" column="class_id" select="findByID"></association> -->
 	</resultMap>
-	
 	<select id="findAll" resultMap="userMap">
 	   select * from user 
 	</select>
