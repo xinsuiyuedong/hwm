@@ -11,6 +11,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ssmdemo.entity.User;
 import com.ssmdemo.service.UserService;
+import com.ssmdemo.entity.LogList;
+import com.ssmdemo.service.LogListService;
 
 @Controller
 @RequestMapping(value="/user")
@@ -18,6 +20,8 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
+	@Autowired
+	private LogListService logListService;
 	private String inner = "сн©м";
 	
 	@RequestMapping(value="/tosignup")
@@ -123,4 +127,33 @@ public class UserController {
 		return mv;
 	}
 	
+	@RequestMapping(value="/addlist")
+	public ModelAndView addList(@RequestParam(value="song") String song){
+		ModelAndView mv = new ModelAndView();
+		LogList logList = new LogList();
+		logList.setUser(inner);
+		logList.setSong(song);
+		logListService.add(logList);
+		mv.setViewName("researchresult");
+		return mv;
+	}
+	
+	@RequestMapping(value="/addlistfrommusic")
+	public ModelAndView addListFromMusic(@RequestParam(value="song") String song){
+		ModelAndView mv = new ModelAndView();
+		LogList logList = new LogList();
+		logList.setUser(inner);
+		logList.setSong(song);
+		logListService.add(logList);
+		mv.setViewName("replayerlist");
+		return mv;
+	}
+	
+	@RequestMapping(value="/deleteList")
+	public ModelAndView deleteList(@RequestParam(value="song") String song){
+		ModelAndView mv = new ModelAndView();
+		logListService.delete(song);
+		mv.setViewName("personalfile");
+		return mv;
+	}
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmdemo.dao.LogListDao">
+    <insert id="add" parameterType="LogList">
+        insert into list(id, user, song) values (#{id}, #{user}, #{song})
+    </insert>
+    
+    <delete id="delete" parameterType="String">
+        delete from list where song=#{song}
+    </delete>
+</mapper>

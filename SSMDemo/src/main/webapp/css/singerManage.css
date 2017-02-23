@@ -1,0 +1,177 @@
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */{
+    border:medium none;
+    margin: 0;
+    padding: 0;
+}
+/** 设置默认字体 **/
+body,button, input, select, textarea {
+    font: 12px/1.5 "Microsoft YaHei";
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+em{font-style:normal;}
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置超链接元素 **/
+a { text-decoration: none; color:#333;}
+a:hover { text-decoration: none; }
+/** 重置图片元素 **/
+img{ border:0px;}
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+.menu{
+    width: 100%;
+    height: 60px;
+    font-family: "Microsoft YaHei";
+    font-size: 10px;
+}
+.menu input:first-child{
+    width: 180px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.menu button{
+    margin-left:15px;
+    background: #888888;
+    color: #ffffff;
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 10px;
+}
+.menu button:hover{
+    background: #000000;
+}
+.content{
+    height: 660px;
+}
+.content div:first-child{
+    height: 40px;
+    background: #eeeeee;
+    width: 90%;
+    overflow: hidden;
+    line-height: 40px;
+
+}
+.content div:first-child ul{
+    position: relative;
+}
+.content div:first-child ul li{
+    float: left;
+}
+.content div:first-child ul li:nth-child(1){
+    position: absolute;
+    left: 70px;
+}
+.content div:first-child ul li:nth-child(2){
+    position: absolute;
+    left: 190px;
+}
+.content div:first-child ul li:nth-child(3){
+    position: absolute;
+    left: 300px;
+}
+.content div:first-child ul li:nth-child(4){
+    position: absolute;
+    left: 440px;
+}
+.content div:first-child ul li:nth-child(5){
+    position: absolute;
+    left: 560px;
+}
+.content div:first-child ul li:nth-child(6){
+    position: absolute;
+    left: 750px;
+}
+.song-mesg ul .item{
+    width: 90%;
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    line-height: 40px;
+}
+.song-mesg ul .item:hover{
+    background: #eeeeee;
+}
+.song-mesg ul .item ul{
+    position: relative;
+}
+.song-mesg ul .item ul li{
+    float: left;
+}
+.song-mesg ul .item ul li:nth-child(1){
+    position: absolute;
+    left: 40px;
+}
+.song-mesg ul .item ul li:nth-child(2){
+    position: absolute;
+    left: 70px;
+}
+.song-mesg ul .item ul li:nth-child(3){
+    position: absolute;
+    left:190px;
+}
+.song-mesg ul .item ul li:nth-child(4){
+    position: absolute;
+    left:285px;
+}
+.song-mesg ul .item ul li:nth-child(5){
+    position: absolute;
+    left:430px;
+}
+.song-mesg ul .item ul li:nth-child(6){
+    position: absolute;
+    left: 580px;
+}
+.song-mesg ul .item ul li:nth-child(7){
+    position: absolute;
+    left: 680px;
+}
+.song-mesg ul .item ul li:nth-child(7) span{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.song-mesg ul .item ul li:nth-child(7) span a{
+    padding: 5px 8px;
+
+}
+.song-mesg ul .item ul li:nth-child(7) span a:hover{
+    background: #f05050;
+    color: #ffffff;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+}
+.footer ul{
+    position: absolute;
+    left:350px;
+}
+.footer ul li {
+    float: left;
+    margin-left: 4px;
+}
+.footer ul li a{
+    border-radius: 10px;
+    padding:5px 8px;
+}
+.footer ul li:hover a {
+    background: #666666;
+    color: #ffffff;
+    text-decoration: underline;
+}

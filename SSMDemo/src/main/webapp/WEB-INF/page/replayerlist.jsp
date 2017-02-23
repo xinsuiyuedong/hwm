@@ -79,36 +79,48 @@
             </div>
             <div class="list-menu-content" name="consequence">
                 <ul>
+                    <form action="${ctx}/user/addlistfrommusic" method="post">
                         <li>
                             <span></span>
-                            <b>·sample</b>
+                            <b>·Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="Sample"/>添加到我的歌单</b></b>
                             <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-play"></span></a>
                         </li>
+                    </form>
+                    <form action="${ctx}/user/addlistfrommusic" method="post">
                         <li>
                             <span></span>
-                            <b>·Os animals</b>
+                            <b>·Os animals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="Os animals"/>添加到我的歌单</b></b></b>
                             <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-play"></span></a>
                         </li>
+                        </form>
+                    <form action="${ctx}/user/addlistfrommusic" method="post">
                         <li>
                             <span></span>
-                            <b>·Company</b>
+                            <b>·Company&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="Company"/>添加到我的歌单</b></b></b>
                             <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-play"></span></a>
                         </li>
+                        </form>
+                     <form action="${ctx}/user/addlistfrommusic" method="post">
                         <li>
                             <span></span>
-                            <b>·Era Oscuro</b>
+                            <b>·Era Oscuro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="Era Oscuro"/>添加到我的歌单</b></b></b>
                             <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-play"></span></a>
                         </li>
+                        </form>
+                      <form action="${ctx}/user/addlistfrommusic" method="post">
                         <li>
                             <span></span>
-                            <b>·Halo</b>
+                            <b>·Halo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="Halo"/>添加到我的歌单</b></b></b>
                             <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-play"></span></a>
                         </li>
+                        </form>
+                      <form action="${ctx}/user/addlistfrommusic" method="post">
                         <li>
                             <span></span>
-                            <b>·Ash</b>
+                            <b>·Ash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="Ash"/>添加到我的歌单</b></b></b>
                             <a href="${ctx}/html/player.html"><span class="glyphicon glyphicon-play"></span></a>
                         </li>
+                        </form>
                 </ul>
             </div>
 

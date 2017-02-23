@@ -82,9 +82,13 @@
                 <ul>
                     <c:forEach items="${consequence}"  var="song">
                         <li>
+                        <form action="${ctx}/user/addlist" method="post">
                             <span></span>
-                            <b>·${song.song}</b>
+                            <!--  <form action="${ctx}/user/addlist" method="post"> -->
+                            <b>·${song.song}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="song" value="${song.song}"/>添加到我的歌单</b>
+                            <!--</form>-->
                             <span class="glyphicon glyphicon-play"></span>
+                            </form>
                         </li>
                     </c:forEach>
                 </ul>

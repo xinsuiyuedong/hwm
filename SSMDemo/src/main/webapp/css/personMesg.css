@@ -1,0 +1,21 @@
+.form-group .field button{
+    padding: 8px 8px;
+    width: 80px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin-left: 50px;
+}
+.form-group .field button:hover{
+    color: #ffffff;
+    background: #f05050;
+
+}
+.panel-head{
+    border: none;
+}
+.panel, .admin-panel{
+    border: none;
+}
+button{
+    box-shadow: none;
+}

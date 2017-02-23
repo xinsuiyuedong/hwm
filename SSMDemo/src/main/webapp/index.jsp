@@ -969,7 +969,7 @@
             <ul>
                 <li><a href="#">关于我们</a></li>
                 <li><a href="http://www.baidu.com">友情链接</a></li>
-                <li><a href="#">管理员模式</a></li>
+                <li><a href="${ctx}/html/index-rect.html">管理员模式</a></li>
             </ul>
         </div>
         <div class="right">

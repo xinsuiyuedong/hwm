@@ -91,18 +91,18 @@
                 <ul>
                     <li>
                         <span>·</span>
-                        <b>Sorry</b>
-                        <a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>
+                        <b>Sorry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将这首歌从歌单删除</b>
+                        <!-- <a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a> -->
                     </li>
                     <li>
                         <span>·</span>
-                        <b>Rains in L.A.</b>
-                        <a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>
+                        <b>Rains in L.A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将这首歌从歌单删除</b>
+                        
                     </li>
                     <li>
                         <span>·</span>
-                        <b>Sweet Darling</b>
-                        <a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>
+                        <b>Sweet Darling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将这首歌从歌单删除</b>
+                        
                     </li>
                 </ul>
             </div>
