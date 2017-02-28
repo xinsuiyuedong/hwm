@@ -9,4 +9,21 @@
     <select id="findBySong" resultMap="songMap">
         select * from song where song = #{song}
     </select>
+    
+    <insert id="add" parameterType="Song">
+        insert into song(singer, song) values (#{singer}, #{song})
+    </insert>
+    
+    <delete id="delete" parameterType="Integer">
+	   delete from song where id = #{id}
+	</delete>
+    
+    <resultMap type="Song" id="songMap2">
+        <id column="id" property="id"/>
+        <result column="singer" property="singer"/>
+        <result column="song" property="song"/>
+    </resultMap>
+    <select id="findAll" resultMap="songMap2">
+        select * from song
+    </select>
 </mapper>

@@ -52,4 +52,36 @@ public class SongController {
 		mv.setViewName("researchresult");
 		return mv;
 	}
+	
+	@RequestMapping(value="/adminaddsong")
+	public ModelAndView adminAddSong(@RequestParam(value="song") String song, @RequestParam(value="singer") String singer){
+		Song tem = new Song();
+		tem.setSinger(singer);
+		tem.setSong(song);
+		songService.add(tem);
+		List<Song> consequence = songService.findAll();
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("consequence", consequence);
+		mv.setViewName("songmage");
+		return mv;
+	}
+	
+	@RequestMapping(value="/adminallsong")
+	public ModelAndView adminAllSong(){
+		List<Song> consequence = songService.findAll();
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("consequence", consequence);
+		mv.setViewName("songmage");
+		return mv;
+	}
+	
+	@RequestMapping(value="/admindeletesong")
+	public ModelAndView adminDeleteSong(@RequestParam(value="delete") Integer delete){
+		songService.delete(delete);
+		List<Song> deco =  songService.findAll();
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("consequence", deco);
+		mv.setViewName("songmage");
+		return mv;
+	}
 }

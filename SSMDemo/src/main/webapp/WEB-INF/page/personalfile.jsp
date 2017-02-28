@@ -89,21 +89,20 @@
             </div>
             <div class="list-menu-content">
                 <ul>
+                <c:forEach items="${list}" var="logList">
                     <li>
-                        <span>·</span>
-                        <b>Sorry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将这首歌从歌单删除</b>
+                        ${logList.song}<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>
+                    </li>
+                    <li>
+                        <form action="${ctx}/user/personalfiledeletesong">
+                            <input type="hidden" name="livalue" value="${logList.song}">
+                            <button type="submit" >将这首歌从我的歌单删除</button>
+                        </form>
+                    </li>
                         <!-- <a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a> -->
-                    </li>
-                    <li>
-                        <span>·</span>
-                        <b>Rains in L.A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将这首歌从歌单删除</b>
-                        
-                    </li>
-                    <li>
-                        <span>·</span>
-                        <b>Sweet Darling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${ctx}/html/userplayer.html"><span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将这首歌从歌单删除</b>
-                        
-                    </li>
+                    
+   
+                </c:forEach>
                 </ul>
             </div>
 

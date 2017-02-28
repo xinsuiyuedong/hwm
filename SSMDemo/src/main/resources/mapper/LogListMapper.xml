@@ -8,4 +8,13 @@
     <delete id="delete" parameterType="String">
         delete from list where song=#{song}
     </delete>
+    
+    <resultMap type="LogList" id="logListMap">
+	   <id column="id" property="id"/>
+	   <result column="user" property="user"/>
+	   <result column="song" property="song"/>
+	</resultMap>
+    <select id="selectSong" resultMap="logListMap">
+        select * from list where user=#{user}
+    </select>
 </mapper>

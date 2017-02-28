@@ -11,7 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ssmdemo.entity.User;
 import com.ssmdemo.service.UserService;
+import com.ssmdemo.entity.Admin;
 import com.ssmdemo.entity.LogList;
+import com.ssmdemo.service.AdminService;
 import com.ssmdemo.service.LogListService;
 
 @Controller
@@ -22,6 +24,8 @@ public class UserController {
 	private UserService userService;
 	@Autowired
 	private LogListService logListService;
+	@Autowired
+	private AdminService adminService;
 	private String inner = "游客";
 	
 	@RequestMapping(value="/tosignup")
@@ -43,7 +47,7 @@ public class UserController {
 			return mv;
 		}
 		else{
-			System.out.println("okokokokokokok");
+			//System.out.println("okokokokokokok");
 			userService.add(user);
 			//return "redirect:/index.jsp";
 			mv.setViewName("successfulpage");
@@ -97,9 +101,22 @@ public class UserController {
 	public ModelAndView personalFile(){
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("user", inner);
+		List<LogList> list = logListService.selectSong(inner);
+		mv.addObject("list", list);
 		mv.setViewName("personalfile");
 		return mv;
 	}
+	
+	@RequestMapping(value="/personalfiledeletesong")
+	public ModelAndView personalFileDeleteSong(@RequestParam(value="livalue") String livalue){
+		ModelAndView mv = new ModelAndView();
+		logListService.delete(livalue);
+		List<LogList> list = logListService.selectSong(inner);
+		mv.addObject("list", list);
+		mv.setViewName("personalfile");
+		return mv;
+	}
+	
 	
 	@RequestMapping(value="/returntoreindex")
 	public ModelAndView toReindex(){
@@ -154,6 +171,80 @@ public class UserController {
 		ModelAndView mv = new ModelAndView();
 		logListService.delete(song);
 		mv.setViewName("personalfile");
+		return mv;
+	}
+	
+	@RequestMapping(value="/adminlogin")
+	public ModelAndView adminLogin(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("adminlogin");
+		return mv;
+	}
+	
+	@RequestMapping(value="/backstage", method=RequestMethod.POST)
+	public ModelAndView backstage(@RequestParam(value="id") String id, @RequestParam(value="password") String password){
+		String error="";
+		Admin admin = adminService.findByID(id);
+		ModelAndView mv = new ModelAndView();
+		
+		if(admin == null){
+			error = "管理员不存在";
+			mv.addObject("error", error);
+			mv.setViewName("errorpage");
+			return mv;
+		}
+		else{
+			if(!admin.getPassword().equals(password)){
+				error = "账号/密码错误";
+				mv.addObject("error", error);
+				mv.setViewName("errorpage");
+				return mv;
+			}
+			else{
+				mv.setViewName("backstage");
+				return mv;
+			}
+		}
+	}
+	
+	
+	@RequestMapping(value="/mainpage")
+	public ModelAndView mainPage(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("mainpage");
+		return mv;
+	}
+	
+	@RequestMapping(value="/songmage")
+	public ModelAndView songMage(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("songmage");
+		return mv;
+	}
+	
+	@RequestMapping(value="/usermage")
+	public ModelAndView userMage(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("usermage");
+		return mv;
+	}
+	
+	@RequestMapping(value="/adminalluser")
+	public ModelAndView adminAllUser(){
+		List<User> re = userService.findAll();
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("re", re);
+		mv.setViewName("usermage");
+		return mv;
+	}
+	
+	@RequestMapping(value="/admindeleteuser")
+	public ModelAndView adminDeleteUser(@RequestParam(value="delete") String delete){
+		userService.delete(delete);
+		List<User> deus = userService.findAll();
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("re", deus);
+		mv.setViewName("usermage");
 		return mv;
 	}
 }

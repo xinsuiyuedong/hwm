@@ -20,6 +20,16 @@ public class SongServiceImpl implements SongService {
 	public List<Song> findBySong(String song) {
 		return songDao.findBySong(song);
 	}
-
 	
+	public void add(Song song){
+		songDao.add(song);
+	}
+	
+	public void delete(Integer id){
+		songDao.delete(id);
+	}
+
+	public List<Song> findAll() {
+		return songDao.findAll();
+	}
 }

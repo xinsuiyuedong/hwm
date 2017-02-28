@@ -334,15 +334,20 @@
             <ul>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活"  class="msk"></a>
+                        <img src="http://p3.music.126.net/X6M2lW_70Vf86x8AbYLhuw==/1387583682060062.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="【欧美】当民谣邂逅电影"  class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
+                        <a href="${ctx}/user/redetailedlist" title="【欧美】当民谣邂逅电影" class="tit">【欧美】当民谣邂逅电影</a>
                     </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="http://p3.music.126.net/0RuVXk4jT8-UoCRMG7zZFQ==/18716986441456695.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="民谣中的节奏担当——手鼓" class="msk"></a>
+                    </div>
+                    <p class="dec">
+                        <a href="${ctx}/user/redetailedlist" title="民谣中的节奏担当——手鼓" class="tit">民谣中的节奏担当——手鼓</a>
                     </p>
                 </li>
                 <li>
@@ -353,178 +358,113 @@
                     <p class="dec">
                         <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
                     </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="http://p4.music.126.net/6Cwl16nsewmG3XZ-kViqyQ==/18776360069265415.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="我后来见你独峙酸忧" class="msk"></a>
+                    </div>
+                    <p class="dec">
+                        <a href="${ctx}/user/redetailedlist" title="我后来见你独峙酸忧" class="tit">我后来见你独峙酸忧</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p4.music.126.net/1MxlX_uITmkkvIGM7JSwrg==/18979769718672663.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="民谣·低吟浅唱一段过往" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="民谣·低吟浅唱一段过往" class="tit">民谣·低吟浅唱一段过往</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p3.music.126.net/9uGYzt3LN-hUI769o04d2Q==/109951162856795647.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="民谣的人啊，你到底遇过几个丫头" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="民谣的人啊，你到底遇过几个丫头" class="tit">民谣的人啊，你到底遇过几个丫头</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p3.music.126.net/69slaHNsZkXJMw9xsK8eTw==/18545462627448813.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="扫弦民谣|抚平残心中凋烟泣露的唏嘘" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="扫弦民谣|抚平残心中凋烟泣露的唏嘘" class="tit">扫弦民谣|抚平残心中凋烟泣露的唏嘘</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p3.music.126.net/U6c1GgNp80Sl2N1RrX3RyQ==/18558656766952731.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="【翻唱改编合唱】" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="【翻唱改编合唱】" class="tit">【翻唱改编合唱】</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p3.music.126.net/KHnhfRcusogzEa9_1S4Bcw==/109951162827074332.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="民谣歌曲中的童声" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="民谣歌曲中的童声" class="tit">民谣歌曲中的童声</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p4.music.126.net/-Hdz3_6c034Q-JNNhApLMw==/3399689966810632.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="Forza Horizon 3 OST" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="Forza Horizon 3 OST" class="tit">Forza Horizon 3 OST</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p3.music.126.net/3h43_1WrP9eQL0kdzw5NHA==/18725782534179907.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="全球最好听法语系强势来袭 " class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="全球最好听法语系强势来袭 " class="tit">全球最好听法语系强势来袭 </a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p4.music.126.net/YRtj_VRZ4_Eu-HKNWRCCUQ==/1418370012084615.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="全球最好听英语系强势来袭" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="全球最好听英语系强势来袭" class="tit">全球最好听英语系强势来袭</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p4.music.126.net/ex4jS7BVE1BwiYMucXIY3A==/18791753232109195.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="爱の诗篇" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="爱の诗篇" class="tit">爱の诗篇</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p4.music.126.net/YASRKaKXyAwShV5N2vHnig==/18792852743645107.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="日本原创歌手集" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="日本原创歌手集" class="tit">日本原创歌手集</a>
                     </p>
                 </li>
                 <li>
                     <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
+                        <img src="http://p3.music.126.net/JX5xli68KYIVLZmcDzRwaQ==/18817041999494000.jpg?param=140y140" alt="歌单图片">
+                        <a href="#" title="清恋SEIREN" class="msk"></a>
                     </div>
                     <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
-                    </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
-                    </div>
-                    <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
-                    </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="../images/gedantupian.jpeg" alt="歌单图片">
-                        <a href="#" title="我想你已经习惯一个人生活" class="msk"></a>
-                    </div>
-                    <p class="dec">
-                        <a href="${ctx}/user/redetailedlist" title="我想你已经习惯一个人生活" class="tit">我想你已经习惯一个人生活</a>
-                    </p>
-                    <p>
-                        <span class="s-fc4">by</span>
-                        <a href="#" title="心有力而余额不足" class="nm">心有力而余额不足</a>
+                        <a href="${ctx}/user/redetailedlist" title="清恋SEIREN" class="tit">清恋SEIREN</a>
                     </p>
                 </li>
             </ul>
@@ -532,6 +472,7 @@
         </div>
     </div>
 </div>
+
 <!--底部-->
 <footer>
     <div class="container">
